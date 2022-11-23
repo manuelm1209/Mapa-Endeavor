@@ -5,11 +5,14 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .country {
-    fill: #33415c;
     stroke: #060a0f;
+    stroke-dasharray: 2;
+    stroke-opacity: 0.2;
+    stroke-width: 1px;
     transition: fill .5s;
 }
 
@@ -20,9 +23,82 @@ body {
     stroke-opacity: 0.2;
 }
 
-.info {
+.country-info {
     position: fixed;
     top: 0;
     color: white;
     padding: 30px
+}
+
+.drag-text {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 12px;
+}
+
+.drag-menu-container {
+    position: fixed;
+    bottom: 0;
+    padding-top: 10px;
+}
+
+.info-menu-container {
+    position: fixed;
+    top: 0;
+    padding-top: 30px;
+}
+
+.quantity-container {
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.country-title-text {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 4vw;
+}
+
+/* .country-entrepreneurs-title {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+} */
+
+.country-entrepreneurs-text {
+    color: #FF784D;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+    font-weight: 200;
+}
+
+.country-quantity-titles {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+
+.country-companies-text {
+    color: #AC27F4;
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.div-entrepreneurs {
+    margin: 10px;
+}
+
+.div-companies {
+    margin: 10px;
 }
